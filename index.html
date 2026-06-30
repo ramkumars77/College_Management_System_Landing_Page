@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prince Engineering College</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">RK</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#admissions">Admissions</a></li>
+            <li><a href="#facilities">Facilities</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to RK Group of Institution</h1>
+            <p>Empowering Minds, Engineering the Future.</p>
+            <p>Established in 2001</p>
+            <div class="hero-buttons">
+                <a href="#admissions" class="btn">Apply Now</a>
+                <a href="#courses" class="btn btn-outline">Explore Courses</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="stats" class="stats-section">
+        <div class="stat-card">
+            <h3 class="counter" data-target="2500">0</h3>
+            <p>Total Students</p>
+        </div>
+        <div class="stat-card">
+            <h3 class="counter" data-target="15">0</h3>
+            <p>Courses Offered</p>
+        </div>
+        <div class="stat-card">
+            <h3 class="counter" data-target="25">0</h3>
+            <p>Years of Excellence</p>
+        </div>
+        <div class="stat-card">
+            <h3 class="counter" data-target="95">0</h3>
+            <p>Placement Rate (%)</p>
+        </div>
+    </section>
+
+    <section id="courses" class="section">
+        <h2>Our Courses</h2>
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="engineering">Engineering</button>
+            <button class="filter-btn" data-filter="arts">Arts</button>
+            <button class="filter-btn" data-filter="commerce">Commerce</button>
+        </div>
+        
+        <div class="course-grid">
+            <div class="course-card" data-category="engineering">
+                <h3>B.E. Computer Science</h3>
+                <p>Learn software development, AI, and systems.</p>
+            </div>
+            <div class="course-card" data-category="engineering">
+                <h3>B.E. Electronics</h3>
+                <p>Master circuit design and embedded systems.</p>
+            </div>
+            <div class="course-card" data-category="arts">
+                <h3>B.A. English</h3>
+                <p>Deep dive into literature and modern linguistics.</p>
+            </div>
+            <div class="course-card" data-category="arts">
+                <h3>B.A. History</h3>
+                <p>Explore ancient cultures and modern global events.</p>
+            </div>
+            <div class="course-card" data-category="commerce">
+                <h3>B.Com General</h3>
+                <p>Fundamentals of accounting and business management.</p>
+            </div>
+            <div class="course-card" data-category="commerce">
+                <h3>B.Com Finance</h3>
+                <p>Specialized focus on banking and investments.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="admissions" class="section bg-light">
+        <h2>Admissions & Fees</h2>
+        <table id="feeTable">
+            <thead>
+                <tr>
+                    <th onclick="sortTable(0)">Course Name &#8693;</th>
+                    <th onclick="sortTable(1)">Duration (Yrs) &#8693;</th>
+                    <th onclick="sortTable(2)">Annual Fee (₹) &#8693;</th>
+                    <th onclick="sortTable(3)">Seats Available &#8693;</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>B.E. Computer Science</td><td>4</td><td>85000</td><td>120</td></tr>
+                <tr><td>B.E. Electronics</td><td>4</td><td>75000</td><td>60</td></tr>
+                <tr><td>B.A. English</td><td>3</td><td>30000</td><td>40</td></tr>
+                <tr><td>B.Com General</td><td>3</td><td>45000</td><td>80</td></tr>
+            </tbody>
+        </table>
+        <br>
+        <button class="btn" onclick="alert('Form Modal would open here!')">Apply Now Modal</button>
+    </section>
+
+    <section id="facilities" class="section">
+        <h2>Campus Facilities</h2>
+        <div class="facility-grid">
+            <div class="facility-card">
+                <div class="icon">📚</div>
+                <h3>Central Library</h3>
+                <p>Thousands of books and digital resources.</p>
+            </div>
+            <div class="facility-card">
+                <div class="icon">💻</div>
+                <h3>Advanced Labs</h3>
+                <p>Fully equipped technical laboratories.</p>
+            </div>
+            <div class="facility-card">
+                <div class="icon">⚽</div>
+                <h3>Sports Complex</h3>
+                <p>Indoor and outdoor athletic facilities.</p>
+            </div>
+            <div class="facility-card">
+                <div class="icon">🛏️</div>
+                <h3>Hostel</h3>
+                <p>Comfortable living spaces for students.</p>
+            </div>
+            <div class="facility-card">
+                <div class="icon">☕</div>
+                <h3>Cafeteria</h3>
+                <p>Hygienic and affordable meals.</p>
+            </div>
+            <div class="facility-card">
+                <div class="icon">📶</div>
+                <h3>Wi-Fi Campus</h3>
+                <p>High-speed internet access everywhere.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="section bg-light">
+        <h2>Campus Gallery</h2>
+        <div class="gallery-grid">
+            <img src="https://picsum.photos/id/10/400/300" alt="Campus 1" class="gallery-img">
+            <img src="https://picsum.photos/id/20/400/300" alt="Campus 2" class="gallery-img">
+            <img src="https://picsum.photos/id/30/400/300" alt="Campus 3" class="gallery-img">
+            <img src="https://picsum.photos/id/40/400/300" alt="Campus 4" class="gallery-img">
+            <img src="https://picsum.photos/id/50/400/300" alt="Campus 5" class="gallery-img">
+            <img src="https://picsum.photos/id/60/400/300" alt="Campus 6" class="gallery-img">
+        </div>
+    </section>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img id="lightbox-img" src="" alt="Expanded image">
+    </div>
+
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <p><strong>Address:</strong> Moolacheri, Chennai, Tamil Nadu</p>
+                <p><strong>Phone:</strong> +91 9876512340</p>
+                <p><strong>Email:</strong> info@Rkgroupofinstitution.edu</p>
+
+            </div>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <input type="text" id="subject" placeholder="Subject" required>
+                    <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
